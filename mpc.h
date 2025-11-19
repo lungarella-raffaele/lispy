@@ -25,7 +25,6 @@ extern "C" {
 /*
 ** State Type
 */
-
 typedef struct {
   long pos;
   long row;

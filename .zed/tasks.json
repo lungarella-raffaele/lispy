@@ -1,0 +1,9 @@
+[
+  {
+    "label": "Build",
+    "command": "gcc -std=c99 -Wall parsing.c mpc.c -ledit -lm -o parsing && ./parsing",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  }
+]

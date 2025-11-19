@@ -1,0 +1,27 @@
+// Project-local debug tasks
+//
+// For more documentation on how to configure debug tasks,
+// see: https://zed.dev/docs/debugger
+[
+  {
+    "label": "Debug native binary",
+    "build": {
+      "command": "gcc",
+      "args": [
+        "-std=c99",
+        "-Wall",
+        "-g",
+        "-O0",
+        "parsing.c",
+        "mpc.c",
+        "-ledit",
+        "-lm",
+        "-o",
+        "parsing"
+      ]
+    },
+    "program": "$ZED_WORKTREE_ROOT/parsing",
+    "request": "launch",
+    "adapter": "CodeLLDB"
+  }
+]
